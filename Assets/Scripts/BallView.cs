@@ -22,7 +22,7 @@ public class BallView : MonoBehaviour
         if (collision.gameObject.tag == "Jogador")
         {
             //Startar o método de reflexao de jogador
-            _ballController.PerfectAngleReflect(collision);
+            _ballController.CalcBallAngleReflect(collision);
 
         }
         else
