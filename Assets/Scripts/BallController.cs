@@ -4,22 +4,44 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Diagnostics;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
     private BallModel _ballModel;
     private Rigidbody2D _rigidBody;
-
+    private GameObject canvas;
+    private PlayerController _player;
+    private int _vida = 1;
 
     void Start()
     {
         _ballModel = GetComponent<BallModel>();
         _rigidBody = GetComponent<Rigidbody2D>();
+        canvas = GameObject.Find("Canvas");
+        canvas.SetActive(false);
 
 
         AngleChange(_ballModel.Direction);
 
+    }
+
+    void Update()
+    {
+        if (_ballModel.transform.position.y < -5.316)
+        {
+            _vida = _vida - 1 ;
+            Vector3 newPosition = _ballModel.transform.position;
+            newPosition.y = -1.44f;
+            _ballModel.transform.position = newPosition;
+            if (_vida == 0)
+            {
+                Time.timeScale = 0f;
+                canvas.SetActive(true);
+            }
+            //SceneManager.LoadScene("fase_2");
+        }
     }
 
     public void AngleChange(Vector2 direction)

@@ -1,0 +1,177 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp.dll:
+    - BallController
+    - BallModel
+    - BallView
+    - BrikController
+    - BrikModel
+    - BrikView
+    - PlayerController
+    - PlayerModel
+    - PlayerView
+  serializedClasses: {}
+  methodsToPreserve: []
+  sceneClasses:
+    Assets/Scenes/SampleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17728}
+    - Class: 114
+      Script: {instanceID: 17730}
+    - Class: 114
+      Script: {instanceID: 17732}
+    - Class: 114
+      Script: {instanceID: 17734}
+    - Class: 114
+      Script: {instanceID: 17736}
+    - Class: 114
+      Script: {instanceID: 17738}
+    - Class: 114
+      Script: {instanceID: 17740}
+    - Class: 114
+      Script: {instanceID: 17742}
+    - Class: 114
+      Script: {instanceID: 17744}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/fase_2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17728}
+    - Class: 114
+      Script: {instanceID: 17730}
+    - Class: 114
+      Script: {instanceID: 17732}
+    - Class: 114
+      Script: {instanceID: 17734}
+    - Class: 114
+      Script: {instanceID: 17736}
+    - Class: 114
+      Script: {instanceID: 17738}
+    - Class: 114
+      Script: {instanceID: 17740}
+    - Class: 114
+      Script: {instanceID: 17742}
+    - Class: 114
+      Script: {instanceID: 17744}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 3f70ef239726d5e3c97c0a0cc68de481
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BallController
+  - hash:
+      serializedVersion: 2
+      Hash: 16867dd9ffba8473325cec08dbccfa02
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BallView
+  - hash:
+      serializedVersion: 2
+      Hash: 97c7b408089d770526f5056b1715b46d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BrikController
+  - hash:
+      serializedVersion: 2
+      Hash: d890f1cf4aa913f9e4064ca36fd86a6c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BallModel
+  - hash:
+      serializedVersion: 2
+      Hash: 188fa1317c63ba87167f8cc4cdfa5877
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: e2a7a9bb5a38fd8412d432948aaf8ba3
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BrikModel
+  - hash:
+      serializedVersion: 2
+      Hash: 7904a5f68837edc7840d6ccc63a182b8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerView
+  - hash:
+      serializedVersion: 2
+      Hash: e0eec17b49a478734734a6625c8155e0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BrikView
+  - hash:
+      serializedVersion: 2
+      Hash: 3c7b093829679777f2daf4b8a7be5edc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerModel
+  platform: 19
+  scenePathNames:
+  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/fase_2.unity
+  playerPath: D:/GameGeral/cena/GameGeral.exe
