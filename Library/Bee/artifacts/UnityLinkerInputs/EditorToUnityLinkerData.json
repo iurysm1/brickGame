@@ -78,6 +78,13 @@
             ]
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GameManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "GlobalGameManager",
             "fullManagedTypeName": "",
@@ -175,6 +182,55 @@
             "nativeClass": "StreamingManager",
             "fullManagedTypeName": "",
             "moduleName": "Streaming",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TextoScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_ColorGradient",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Settings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SpriteAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_StyleSheet",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -302,6 +358,24 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Canvas",
+            "fullManagedTypeName": "UnityEngine.Canvas",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CanvasRenderer",
+            "fullManagedTypeName": "UnityEngine.CanvasRenderer",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "CircleCollider2D",
             "fullManagedTypeName": "UnityEngine.CircleCollider2D",
             "moduleName": "Physics2D",
@@ -327,6 +401,29 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/fase_2.unity",
+                "Assets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.StandaloneInputModule",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Font",
+            "fullManagedTypeName": "UnityEngine.Font",
+            "moduleName": "TextRendering",
+            "usedInScenes": [
                 "Assets/Scenes/SampleScene.unity"
             ]
         },
@@ -386,6 +483,15 @@
             "fullManagedTypeName": "UnityEngine.QualitySettings",
             "moduleName": "Core",
             "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "RectTransform",
+            "fullManagedTypeName": "UnityEngine.RectTransform",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/SampleScene.unity"
+            ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -493,6 +599,34 @@
                 "Assets/Scenes/fase_2.unity",
                 "Assets/Scenes/SampleScene.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.CanvasScaler",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
         }
     ],
     "allNativeTypes": [

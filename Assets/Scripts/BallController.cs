@@ -6,21 +6,33 @@ using System.ComponentModel;
 using System.Diagnostics;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using TMPro;
 public class BallController : MonoBehaviour
 {
     private BallModel _ballModel;
     private Rigidbody2D _rigidBody;
-    private GameObject canvas;
+
+    public GameObject gameOver;
+    public GameObject startGame;
+    public GameObject tituloCavas;
+
     private PlayerController _player;
     private int _vida = 1;
+    public TextoScript textoVida, textoReiniciar;
 
     void Start()
     {
+
+        //Time.timeScale = 0f;
+        //startGame.SetActive(true);
+
         _ballModel = GetComponent<BallModel>();
         _rigidBody = GetComponent<Rigidbody2D>();
-        canvas = GameObject.Find("Canvas");
-        canvas.SetActive(false);
+        textoReiniciar = tituloCavas.GetComponent<TextoScript>();
+
+
+        textoVida.changeText(_vida.ToString());
+        //gameOver.SetActive(false);
 
 
         AngleChange(_ballModel.Direction);
@@ -38,9 +50,10 @@ public class BallController : MonoBehaviour
             if (_vida == 0)
             {
                 Time.timeScale = 0f;
-                canvas.SetActive(true);
+                textoReiniciar.changeText("GAME OVER");
+                gameOver.SetActive(true);
             }
-            //SceneManager.LoadScene("fase_2");
+            textoVida.changeText(_vida.ToString());
         }
     }
 
