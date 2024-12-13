@@ -7,8 +7,20 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject startGame;
 
-    public static void StartGame()
+    void Start()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void StartGame()
+    {
+        startGame.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void GameOver()
     {
         SceneManager.LoadScene("SampleScene");
         Time.timeScale = 1f;

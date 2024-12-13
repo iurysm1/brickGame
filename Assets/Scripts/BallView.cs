@@ -24,17 +24,20 @@ public class BallView : MonoBehaviour
         {
             UnityEngine.Debug.Log(GameObject.FindGameObjectsWithTag("Brik").Length);
 
-            if (GameObject.FindGameObjectsWithTag("Brik").Length > 0)
+            if (GameObject.FindGameObjectsWithTag("Brik").Length == 1)
             {
+                UnityEngine.Debug.Log("NOVAFASE");
+
+                SceneManager.LoadScene("fase_2");
+
+            }
+            else
+            {
+
                 BrikView _brikView = collision.gameObject.GetComponent<BrikView>();
                 _brikView.PerformTakeDamage(1);
                 pontos += 10;
                 textoPontos.changeText(pontos.ToString());
-            }
-            else
-            {
-                SceneManager.LoadScene("fase_2");
-
             }
 
         }

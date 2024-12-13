@@ -26,5 +26,10 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    public PlayerModel getPlayerModel()
+    {
+        return _playerModel;
+    }
     
 }

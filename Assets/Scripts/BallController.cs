@@ -11,6 +11,7 @@ public class BallController : MonoBehaviour
 {
     private BallModel _ballModel;
     private Rigidbody2D _rigidBody;
+    public AudioSource audioSource;
 
     public GameObject gameOver;
     public GameObject startGame;
@@ -22,9 +23,6 @@ public class BallController : MonoBehaviour
 
     void Start()
     {
-
-        //Time.timeScale = 0f;
-        //startGame.SetActive(true);
 
         _ballModel = GetComponent<BallModel>();
         _rigidBody = GetComponent<Rigidbody2D>();
@@ -72,15 +70,19 @@ public class BallController : MonoBehaviour
 
     public void CalcBallAngleReflect(Collision2D collision)
     {
+
+
+
         //Tamanho do player 120px
-        float _playerPixels = 120f;
+        float _playerPixels = 120f; //GameObject.Find("Player").GetComponent<Collider2D>().bounds.size.x;
+
 
 
         //Pegando o tamanho do player e colocando na escala do unity
         float unitScaleHalfPlayerPixels = _playerPixels / 2f / 100f;
 
 
-        float scaleFactorPutIn1dot8Range = 1.5f;
+        float scaleFactorPutIn1dot8Range = 1.5f; //0.0132501333333333f;
 
 
         float angleDegUnitScale = ((collision.transform.position.x - transform.position.x) + unitScaleHalfPlayerPixels) * scaleFactorPutIn1dot8Range;
@@ -94,15 +96,19 @@ public class BallController : MonoBehaviour
             angleDeg = 170f;
         };
 
+
         //Converter o angule de graus para Radianos
         float angleRad = angleDeg * Mathf.PI / 180f;
-        UnityEngine.Debug.Log(angleRad);
+        UnityEngine.Debug.Log(_playerPixels);
+        //UnityEngine.Debug.Log(angleRad);
+
 
 
         //X e Y serçao extraidos pelo Seno e Cosseno
-        Vector2 _vetorDeRetorno = new Vector2(Mathf.Cos(angleRad), Mathf.Sin(angleRad)); 
+        Vector2 _vetorDeRetorno = new Vector2(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
 
         //Carregando o novo angulo de posições
+        audioSource.Play();
         AngleChange(_vetorDeRetorno);
 
     }
